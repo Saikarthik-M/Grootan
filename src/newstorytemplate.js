@@ -28,12 +28,12 @@ class NewStoryTemplate extends React.Component {
     return (
 
       <a href={window.location.href + this.props.id} target="_blank" style={{ textDecoration: "none" }}>
-        <div class="border border-success my-2 btn btn-block btn-success text-white">
-          <h6 class="lead">{this.state.title}</h6>
+        <div className="border border-success my-2 btn btn-block btn-success text-white">
+          <h6 className="lead">{this.state.title}</h6>
           <hr />
-          <div class="row my-0 py-0">
-            <p class="ml-3 my-0 alert alert-secondary py-0"><span class="text-dark">By </span>{this.state.by}</p>
-            <p class="ml-3 my-auto"><span class="text-dark">on </span>{this.state.date}</p>
+          <div className="row my-0 py-0">
+            <p className="ml-3 my-0 alert alert-secondary py-0"><span className="text-dark">By </span>{this.state.by}</p>
+            <p className="ml-3 my-auto"><span className="text-dark">on </span>{this.state.date}</p>
           </div>
         </div>
       </a>
