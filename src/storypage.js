@@ -28,14 +28,14 @@ class StoryPage extends React.Component {
     }
     render() {
         return (
-            <div class="container fluid my-5">
+            <div className="container fluid my-5">
                 <p><strong>Posted By </strong>: {this.state.by}</p>
                 <p><strong>Posted On</strong> : {this.state.date}</p>
                 <p><strong>Title </strong>: {this.state.title}</p>
                 <p><strong>Story Link</strong> : <a href={this.state.url} target="_blank">{this.state.url}</a></p>
-                <h3 class="lead my-4">Preview</h3>
-                <iframe src={this.state.url} height="500px" width="100%" class="my-3"></iframe>
-                <h3 class="lead my-4"><strong>Comments</strong></h3>
+                <h3 className="lead my-4">Preview</h3>
+                <iframe src={this.state.url} height="500px" width="100%" className="my-3"></iframe>
+                <h3 className="lead my-4"><strong>Comments</strong></h3>
                 {this.state.comments.map((item, id) => {
                     return <Comments key={id} url={item} />
                 })}
