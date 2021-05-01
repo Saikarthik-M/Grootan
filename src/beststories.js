@@ -25,8 +25,8 @@ class BestStories extends React.Component {
     }
     render() {
         return (
-            <div class="container fluid">
-                <h1 class="display-4 text-center my-5">Best Story</h1>
+            <div className="container fluid">
+                <h1 className="display-4 text-center my-5">Best Story</h1>
                 {Object.entries(this.state.data).map((item) => {
                     return <BestStoryTemplate key={item[0]} id={item[1]} />;
                 })}
